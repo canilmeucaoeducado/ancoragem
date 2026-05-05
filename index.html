@@ -144,7 +144,7 @@ a{color:inherit;text-decoration:none}
   color:var(--on-creme-mid);margin-bottom:8px;
 }
 .hero-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:clamp(2rem,8.5vw,3.2rem);
   font-weight:400;line-height:1.05;
   color:var(--on-creme);margin-bottom:12px;
@@ -172,7 +172,7 @@ a{color:inherit;text-decoration:none}
   color:var(--on-creme-muted);margin-bottom:10px;display:block;
 }
 .sec-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:clamp(1.6rem,6.5vw,2.2rem);
   font-weight:400;line-height:1.15;color:var(--on-creme);
   margin-bottom:22px;
@@ -191,7 +191,7 @@ a{color:inherit;text-decoration:none}
   color:var(--on-oliva-muted);margin-bottom:10px;display:block;
 }
 .pur-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:clamp(1.6rem,6.5vw,2.2rem);
   font-weight:400;line-height:1.15;color:#ffffff;margin-bottom:14px;
 }
@@ -214,20 +214,32 @@ a{color:inherit;text-decoration:none}
   color:var(--on-oliva-muted);margin-bottom:14px;display:block;
 }
 .teaches-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:9px;
+  display:flex;flex-direction:column;gap:0;
 }
 .teach-card{
-  background:rgba(255,255,255,0.12);
-  border:1px solid rgba(255,255,255,0.20);
-  border-radius:13px;padding:13px;
+  display:flex;align-items:flex-start;gap:14px;
+  padding:12px 0;
+  border-bottom:1px solid rgba(255,255,255,0.15);
 }
-.teach-card:active{background:rgba(255,255,255,0.20)}
-.teach-icon{font-size:1.2rem;margin-bottom:7px;display:block}
+.teach-card:last-child{border-bottom:none}
+.teach-icon{
+  flex-shrink:0;
+  width:26px;height:26px;
+  background:#5A6B2D;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:0;
+  margin-top:2px;
+}
+.teach-icon::after{
+  content:'✓';
+  font-size:.85rem;font-weight:700;
+  color:#ffffff;
+}
 .teach-card strong{
-  display:block;font-size:.8rem;
-  color:#ffffff;margin-bottom:2px;
+  font-size:.85rem;
+  color:#ffffff;font-weight:600;
 }
-.teach-card p{font-size:.73rem;color:var(--on-oliva-soft);line-height:1.4}
+.teach-card p{font-size:.85rem;color:var(--on-oliva-soft);line-height:1.5;margin:0;display:inline}
 
 /* ── MATERIALS ── */
 .sec-materials{background:var(--creme);padding:52px var(--px)}
@@ -262,7 +274,7 @@ a{color:inherit;text-decoration:none}
 .step-num{
   width:44px;height:44px;border-radius:13px;
   display:flex;align-items:center;justify-content:center;
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:1.2rem;font-weight:400;color:#fff;
   flex-shrink:0;align-self:flex-start;margin-top:3px;
   background:var(--dark3);
@@ -279,7 +291,7 @@ a{color:inherit;text-decoration:none}
   box-shadow:0 2px 14px rgba(0,0,0,.10);
 }
 .step-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:1.05rem;font-weight:400;
   color:#ffffff;margin-bottom:9px;
   letter-spacing:.03em;
@@ -318,7 +330,7 @@ a{color:inherit;text-decoration:none}
   color:var(--on-creme-muted);display:block;text-align:center;margin-bottom:10px;
 }
 .gallery-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:clamp(1.5rem,6vw,2rem);font-weight:400;
   color:var(--on-creme);text-align:center;
   margin-bottom:22px;line-height:1.2;
@@ -348,7 +360,7 @@ a{color:inherit;text-decoration:none}
 /* ── TIMER ── */
 .sec-timer{background:#78874B;padding:52px var(--px);text-align:center}
 .timer-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:1.75rem;font-weight:400;
   color:#ffffff;margin-bottom:7px;
 }
@@ -389,7 +401,7 @@ a{color:inherit;text-decoration:none}
   align-items:center;justify-content:center;
 }
 .t-count{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:2.4rem;font-weight:400;color:#ffffff;line-height:1;
 }
 .t-unit{
@@ -423,7 +435,7 @@ a{color:inherit;text-decoration:none}
   border:1px solid var(--sage);
 }
 .tip-num{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:2.2rem;font-weight:400;
   color:rgba(59,77,30,0.15);line-height:1;
   flex-shrink:0;width:38px;
@@ -438,7 +450,7 @@ a{color:inherit;text-decoration:none}
 }
 .ch-emoji{font-size:3rem;margin-bottom:14px;display:block;animation:float 3s ease-in-out infinite}
 .ch-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:clamp(1.55rem,6.5vw,2.1rem);
   font-weight:400;color:#ffffff;margin-bottom:12px;line-height:1.2;
 }
@@ -462,7 +474,7 @@ a{color:inherit;text-decoration:none}
   color:var(--on-creme-muted);margin-bottom:12px;display:block;
 }
 .cta-title{
-  font-family:'Bebas Neue',sans-serif;
+  font-family:'Outfit',sans-serif;
   font-size:clamp(1.9rem,7.5vw,2.8rem);
   font-weight:400;line-height:1.1;
   color:var(--on-creme);margin-bottom:14px;
@@ -499,7 +511,6 @@ footer span{color:var(--creme)}
 /* ── TABLET ── */
 @media(min-width:580px){
   :root{--px:32px}
-  .teaches-grid{grid-template-columns:repeat(3,1fr)}
   .tips-grid{grid-template-columns:1fr 1fr}
   .mats-grid{grid-template-columns:repeat(3,1fr)}
 }
@@ -523,7 +534,6 @@ footer span{color:var(--creme)}
     justify-content:center;margin-top:0;
   }
   .pur-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1100px;margin:0 auto;align-items:start}
-  .teaches-grid{grid-template-columns:1fr 1fr}
   .mats-inner,.steps-inner,.tips-inner{max-width:900px;margin:0 auto}
   .tips-grid{grid-template-columns:1fr 1fr}
   .gallery-grid{max-width:800px;margin:0 auto}
@@ -573,12 +583,12 @@ footer span{color:var(--creme)}
     <div>
       <span class="teaches-label">O que seu cão aprende</span>
       <div class="teaches-grid">
-        <div class="teach-card"><span class="teach-icon">🧘</span><strong>Relaxar perto de você</strong><p>Presença tranquila e segura</p></div>
-        <div class="teach-card"><span class="teach-icon">🔕</span><strong>Botão de desligar</strong><p>Desacelerar quando necessário</p></div>
-        <div class="teach-card"><span class="teach-icon">💪</span><strong>Tolerar frustração</strong><p>Autocontrole emocional</p></div>
-        <div class="teach-card"><span class="teach-icon">🤫</span><strong>Calma sem comandos</strong><p>Autonomia emocional real</p></div>
-        <div class="teach-card"><span class="teach-icon">🦮</span><strong>Guia parada = descanso</strong><p>Associação positiva clara</p></div>
-        <div class="teach-card"><span class="teach-icon">🌍</span><strong>Qualquer ambiente</strong><p>Casa, parque, restaurante…</p></div>
+        <div class="teach-card"><span class="teach-icon">🧘</span><p><strong>Relaxar perto de você.</strong> Presença tranquila e segura</p></div>
+        <div class="teach-card"><span class="teach-icon">🔕</span><p><strong>Botão de desligar.</strong> Desacelerar quando necessário</p></div>
+        <div class="teach-card"><span class="teach-icon">💪</span><p><strong>Tolerar frustração.</strong> Autocontrole emocional</p></div>
+        <div class="teach-card"><span class="teach-icon">🤫</span><p><strong>Calma sem comandos.</strong> Autonomia emocional real</p></div>
+        <div class="teach-card"><span class="teach-icon">🦮</span><p><strong>Guia parada = descanso.</strong> Associação positiva clara</p></div>
+        <div class="teach-card"><span class="teach-icon">🌍</span><p><strong>Qualquer ambiente.</strong> Casa, parque, restaurante…</p></div>
       </div>
     </div>
   </div>
@@ -686,68 +696,14 @@ footer span{color:var(--creme)}
   </div>
 </section>
 
-<!-- TIMER -->
-<section class="sec-timer">
-  <h2 class="timer-title">Timer de <em>Ancoragem</em></h2>
-  <p class="timer-sub">Use durante a prática para controlar o tempo</p>
-  <div class="timer-opts">
-    <button class="t-btn active" onclick="setTimer(5,this)">5 min</button>
-    <button class="t-btn" onclick="setTimer(10,this)">10 min</button>
-    <button class="t-btn" onclick="setTimer(15,this)">15 min</button>
-    <button class="t-btn" onclick="setTimer(30,this)">30 min</button>
-    <button class="t-btn" onclick="setTimer(40,this)">40 min</button>
-  </div>
-  <div class="timer-wrap">
-    <svg class="t-svg" viewBox="0 0 200 200">
-      <circle class="t-track" cx="100" cy="100" r="75"/>
-      <circle class="t-prog" id="tProg" cx="100" cy="100" r="75"/>
-    </svg>
-    <div class="timer-inner">
-      <span class="t-count" id="tCount">05:00</span>
-      <span class="t-unit">minutos</span>
-    </div>
-  </div>
-  <div class="t-controls">
-    <button class="c-btn" onclick="resetTimer()">↺</button>
-    <button class="c-btn primary" id="startBtn" onclick="toggleTimer()">▶</button>
-    <button class="c-btn" onclick="">🔕</button>
-  </div>
-</section>
-
-<!-- TIPS -->
-<section class="sec-tips sec">
-  <span class="sec-label">Para o Sucesso</span>
-  <h2 class="sec-title">Pontos <em>importantes</em></h2>
-  <div class="tips-inner">
-    <div class="tips-grid">
-      <div class="tip-card"><div class="tip-num">01</div><div><h4>🚫 Nunca deixe sozinho</h4><p>A ancoragem requer que você esteja presente e calmo durante todo o processo.</p></div></div>
-      <div class="tip-card"><div class="tip-num">02</div><div><h4>❌ Nunca como punição</h4><p>Deve ser sempre uma experiência positiva. Como castigo, destrói toda a associação construída.</p></div></div>
-      <div class="tip-card"><div class="tip-num">03</div><div><h4>🍽️ Sem ração durante</h4><p>Durante a ancoragem, só o item especial de roer. A ração é para as refeições normais.</p></div></div>
-      <div class="tip-card"><div class="tip-num">04</div><div><h4>🏁 Fim correto</h4><p>Sempre termine quando ele estiver calmo e deitado. Terminar com agitação ensina o comportamento errado.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- CHALLENGE -->
-<section class="sec-challenge">
-  <span class="ch-emoji">🎥</span>
-  <h2 class="ch-title">Compartilhe a evolução<br>do <em>seu cão!</em></h2>
-  <p class="ch-text">Grave um vídeo do seu cão relaxando na ancoragem. Poste no Instagram e marque <strong>@vetadestradordiego</strong>. </p>
-  <a href="https://instagram.com/vetadestradordiego" target="_blank" class="ig-btn">📸 Marcar @vetadestradordiego</a>
-</section>
-
 <!-- CTA FINAL -->
 <section class="sec-cta">
-  <span class="cta-label">Quer mais? Muito mais.</span>
-  <h2 class="cta-title">Este é apenas 1 dos exercícios que você vai encontrar dentro do meu programa.</h2>
-  <p class="cta-text">Meu Programa Online Meu Cão Educado tem vários exercícios e atividades para deixar seu cão mais calmo, obediente e educado.</p>
   <a href="https://canilmeucaoeducado.github.io/meucaoeducado/" target="_blank" class="cta-btn">Conhecer o Programa Completo</a>
+  <h2 class="cta-title">Agora veja o que você vai encontrar no Programa Completo</h2>
   
 </section>
 
-<footer>
-  © 2024 <span>Método Online Meu Cão Educado</span> · Diego Lima<br>Todos os direitos reservados
-</footer>
+<footer></footer>
 
 <script>
 window.addEventListener('scroll',()=>{
